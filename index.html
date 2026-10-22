@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home - Australian Appliance Energy Data</title>
+
+    <!-- Existing CSS -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <!-- Header and navigation -->
+    <header>
+        <div class="header-container">
+
+            <!-- Logo -->
+            <a href="index.html"
+               title="Return to Home"
+               onclick="loadPage(event, 'index.html', 'link-home')">
+
+                <img src="logo.png"
+                     alt="Power Logo"
+                     class="logo">
+            </a>
+
+            <!-- Navigation links -->
+            <nav>
+                <ul>
+                    <li>
+                        <a id="link-home"
+                           href="index.html"
+                           onclick="loadPage(event, 'index.html', 'link-home')"
+                           class="active-link">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="link-televisions"
+                           href="televisions.html"
+                           onclick="loadPage(event, 'televisions.html', 'link-televisions')">
+                            Televisions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a id="link-about"
+                           href="about.html"
+                           onclick="loadPage(event, 'about.html', 'link-about')">
+                            About Us
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- Main content -->
+    <main>
+
+        <!-- Existing homepage content -->
+        <section id="home">
+
+            <h1>Appliance Energy Use in Australia</h1>
+
+            
+
+        </section>
+
+
+        <!-- NEW: T04-3 responsive SVG chart container -->
+        <div class="responsive-svg-container"></div>
+
+    </main>
+
+
+    <!-- Existing footer -->
+    <footer>
+
+        <p>&copy; 2026 Elvin Pui Yung Kit</p>
+
+        <p>
+            <small>
+                Code and content generated with the assistance of GenAI.
+            </small>
+        </p>
+
+    </footer>
+
+
+    <!-- Load D3 library first -->
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+
+    <!-- NEW: JavaScript for T04-3 -->
+    <script src="t04-3-bars.js"></script>
+
+    <!-- Old T04-2 demo: temporarily disabled -->
+    <!-- <script src="energy-d3.js"></script> -->
+
+    <!-- Existing navigation JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+</html>
