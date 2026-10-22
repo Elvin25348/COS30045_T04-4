@@ -14,11 +14,10 @@
 
 <body>
 
-    <!-- Header and navigation -->
+    <!-- Existing header and navigation -->
     <header>
         <div class="header-container">
 
-            <!-- Logo -->
             <a href="index.html"
                title="Return to Home"
                onclick="loadPage(event, 'index.html', 'link-home')">
@@ -28,7 +27,6 @@
                      class="logo">
             </a>
 
-            <!-- Navigation links -->
             <nav>
                 <ul>
                     <li>
@@ -62,20 +60,17 @@
     </header>
 
 
-    <!-- Main content -->
+    <!-- Existing homepage content -->
     <main>
-
-        <!-- Existing homepage content -->
         <section id="home">
 
             <h1>Appliance Energy Use in Australia</h1>
 
-            
+         
 
         </section>
 
-
-        <!-- NEW: T04-3 responsive SVG chart container -->
+        <!-- Existing T04-3 container; kept for future use -->
         <div class="responsive-svg-container"></div>
 
     </main>
@@ -83,7 +78,6 @@
 
     <!-- Existing footer -->
     <footer>
-
         <p>&copy; 2026 Elvin Pui Yung Kit</p>
 
         <p>
@@ -91,18 +85,18 @@
                 Code and content generated with the assistance of GenAI.
             </small>
         </p>
-
     </footer>
 
 
-    <!-- Load D3 library first -->
+    <!-- D3 library -->
     <script src="https://d3js.org/d3.v7.min.js"></script>
 
-    <!-- NEW: JavaScript for T04-3 -->
-    <script src="t04-3-bars.js"></script>
+    <!-- NEW: T04-4 CSV loader -->
+    <script src="t04-4-load.js"></script>
 
-    <!-- Old T04-2 demo: temporarily disabled -->
+    <!-- Old demo files: disabled during T04-4 -->
     <!-- <script src="energy-d3.js"></script> -->
+    <!-- <script src="t04-3-bars.js"></script> -->
 
     <!-- Existing navigation JavaScript -->
     <script src="js/script.js"></script>
